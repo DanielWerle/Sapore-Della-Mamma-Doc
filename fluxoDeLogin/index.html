@@ -311,41 +311,77 @@
 <p>Fluxo de Login do Sistema 
 A funcionalidade de login permite autenticar o usuário por meio da validação de suas credenciais e controlar o acesso às funcionalidades do sistema.</p>
 <ol>
-<li>Acesso à tela de Login
-Quando o usuário acessar o site ele será recepcionado pela tela de login do sistema, onde apresentará:</li>
+<li>
+<p>Acesso à tela de Login
+Quando o usuário acessar o site ele será recepcionado pela tela de login do sistema, onde apresentará:</p>
+</li>
+<li>
+<p>O campo “usuário” </p>
+</li>
+<li>
+<p>O campo “senha”</p>
+</li>
+<li>
+<p>O botão “Entrar“ </p>
+</li>
 </ol>
-<p>-O campo “usuário” </p>
-<p>-O campo “senha”</p>
-<p>-O botão “Entrar“ </p>
 <p>O usuário deve informar suas credenciais e selecionar "Entrar" ou pressionar Enter para iniciar a autenticação.</p>
 <ol>
 <li>Validação das Credenciais
 Após o envio das credenciais, o sistema realiza a autenticação e segue um dos caminhos:</li>
 </ol>
 <p>Credenciais Válidas
--O sistema permitirá o acesso.</p>
-<p>-Uma sessão será registrada.</p>
-<p>-O usuário poderá utilizar as funcionalidades disponíveis de acordo com suas permissões.</p>
+- O sistema permitirá o acesso.</p>
+<ul>
+<li>
+<p>Uma sessão será registrada.</p>
+</li>
+<li>
+<p>O usuário poderá utilizar as funcionalidades disponíveis de acordo com suas permissões.</p>
+</li>
+</ul>
 <p>Credenciais Inválidas
--O sistema recusará o acesso.</p>
-<p>-Uma mensagem de erro informará: “Usuário ou senha estão incorretos”.</p>
-<p>-A tentativa será contabilizada para possível futuro bloqueio.</p>
-<ol>
-<li>Bloqueio por tentativas consecutivas
-Caso o usuário informe a senha incorreta cinco vezes consecutivas o sistema irá bloquear o acesso da conta por dez minutos.</li>
-</ol>
-<p>-Durante o período de bloqueio:</p>
-<p>-O usuário não poderá fazer novas tentativas de acesso.</p>
-<p>-Uma mensagem irá informar que o acesso está temporariamente bloqueado.</p>
-<p>-Após o término de dez minutos, novas tentativas serão disponibilizadas.</p>
-<ol>
-<li>Encerrar sessão
-Ao finalizar suas atividades, o usuário poderá selecionar a opção "Encerrar sessão".</li>
-</ol>
+- O sistema recusará o acesso.</p>
+<ul>
+<li>
+<p>Uma mensagem de erro informará: “Usuário ou senha estão incorretos”.</p>
+</li>
+<li>
+<p>A tentativa será contabilizada para possível futuro bloqueio.</p>
+</li>
+<li>
+<p>Bloqueio por tentativas consecutivas
+Caso o usuário informe a senha incorreta cinco vezes consecutivas o sistema irá bloquear o acesso da conta por dez minutos.</p>
+</li>
+<li>
+<p>Durante o período de bloqueio:</p>
+</li>
+<li>
+<p>O usuário não poderá fazer novas tentativas de acesso.</p>
+</li>
+<li>
+<p>Uma mensagem irá informar que o acesso está temporariamente bloqueado.</p>
+</li>
+<li>
+<p>Após o término de dez minutos, novas tentativas serão disponibilizadas.</p>
+</li>
+<li>
+<p>Encerrar sessão
+Ao finalizar suas atividades, o usuário poderá selecionar a opção "Encerrar sessão".</p>
+</li>
+</ul>
 <p>Ao selecionar essa opção:</p>
-<p>-A sessão atual será encerrada.</p>
-<p>-O usuário deixará de ter acesso às funcionalidades do sistema.</p>
-<p>-O sistema irá direcionar o usuário para a tela de login.</p>
+<ul>
+<li>
+<p>A sessão atual será encerrada.</p>
+</li>
+<li>
+<p>O usuário deixará de ter acesso às funcionalidades do sistema.</p>
+</li>
+<li>
+<p>O sistema irá direcionar o usuário para a tela de login.</p>
+</li>
+</ul>
 <p>Regras de Negócio
 RN001
 O campo de usuário será obrigatório.</p>
