@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#fluxo-de-login-do-sistema" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -251,6 +256,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fluxo de Login
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -268,6 +293,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-acesso-a-tela-de-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Acesso à tela de Login
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-validacao-das-credenciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Validação das Credenciais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-bloqueio-por-tentativas-consecutivas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Bloqueio por tentativas consecutivas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-encerrar-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Encerrar sessão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -290,6 +389,71 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-acesso-a-tela-de-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Acesso à tela de Login
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-validacao-das-credenciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Validação das Credenciais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-bloqueio-por-tentativas-consecutivas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Bloqueio por tentativas consecutivas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-encerrar-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Encerrar sessão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -306,91 +470,65 @@
 
 
 
-  <h1>Fluxo de Login</h1>
+<h1 id="fluxo-de-login-do-sistema">Fluxo de Login do Sistema</h1>
+<p>A funcionalidade de login permite autenticar o usuário por meio da validação de suas credenciais e controlar o acesso às funcionalidades do sistema.</p>
+<h3 id="1-acesso-a-tela-de-login">1. Acesso à tela de Login</h3>
+<pre><code>Quando o usuário acessar o site ele será recepcionado pela tela de login do sistema, onde apresentará:
 
-<p>Fluxo de Login do Sistema 
-A funcionalidade de login permite autenticar o usuário por meio da validação de suas credenciais e controlar o acesso às funcionalidades do sistema.</p>
-<ol>
-<li>
-<p>Acesso à tela de Login
-Quando o usuário acessar o site ele será recepcionado pela tela de login do sistema, onde apresentará:</p>
-</li>
-<li>
-<p>O campo “usuário” </p>
-</li>
-<li>
-<p>O campo “senha”</p>
-</li>
-<li>
-<p>O botão “Entrar“ </p>
-</li>
-</ol>
-<p>O usuário deve informar suas credenciais e selecionar "Entrar" ou pressionar Enter para iniciar a autenticação.</p>
-<ol>
-<li>Validação das Credenciais
-Após o envio das credenciais, o sistema realiza a autenticação e segue um dos caminhos:</li>
-</ol>
-<p>Credenciais Válidas
-- O sistema permitirá o acesso.</p>
-<ul>
-<li>
-<p>Uma sessão será registrada.</p>
-</li>
-<li>
-<p>O usuário poderá utilizar as funcionalidades disponíveis de acordo com suas permissões.</p>
-</li>
-</ul>
-<p>Credenciais Inválidas
-- O sistema recusará o acesso.</p>
-<ul>
-<li>
-<p>Uma mensagem de erro informará: “Usuário ou senha estão incorretos”.</p>
-</li>
-<li>
-<p>A tentativa será contabilizada para possível futuro bloqueio.</p>
-</li>
-<li>
-<p>Bloqueio por tentativas consecutivas
-Caso o usuário informe a senha incorreta cinco vezes consecutivas o sistema irá bloquear o acesso da conta por dez minutos.</p>
-</li>
-<li>
-<p>Durante o período de bloqueio:</p>
-</li>
-<li>
-<p>O usuário não poderá fazer novas tentativas de acesso.</p>
-</li>
-<li>
-<p>Uma mensagem irá informar que o acesso está temporariamente bloqueado.</p>
-</li>
-<li>
-<p>Após o término de dez minutos, novas tentativas serão disponibilizadas.</p>
-</li>
-<li>
-<p>Encerrar sessão
-Ao finalizar suas atividades, o usuário poderá selecionar a opção "Encerrar sessão".</p>
-</li>
-</ul>
-<p>Ao selecionar essa opção:</p>
-<ul>
-<li>
-<p>A sessão atual será encerrada.</p>
-</li>
-<li>
-<p>O usuário deixará de ter acesso às funcionalidades do sistema.</p>
-</li>
-<li>
-<p>O sistema irá direcionar o usuário para a tela de login.</p>
-</li>
-</ul>
-<p>Regras de Negócio
-RN001
-O campo de usuário será obrigatório.</p>
-<p>RN002
-O campo de senha será obrigatório.</p>
-<p>RN003
-A senha deve possuir no mínimo 8 caracteres e ao menos um caractere especial.</p>
-<p>RN004
-Após cinco falhas de senha consecutivas, a conta será bloqueada por dez minutos.</p>
+    - O campo “usuário”
+
+    - O campo “senha”
+
+    - O botão “Entrar“
+
+O usuário deve informar suas credenciais e selecionar "Entrar" ou pressionar Enter para iniciar a autenticação.
+</code></pre>
+<h3 id="2-validacao-das-credenciais">2. Validação das Credenciais</h3>
+<pre><code>Após o envio das credenciais, o sistema realiza a autenticação e segue um dos caminhos:
+
+Credenciais Válidas
+
+    - O sistema permitirá o acesso.
+
+    - Uma sessão será registrada.
+
+    - O usuário poderá utilizar as funcionalidades disponíveis de acordo com suas permissões.
+
+Credenciais Inválidas
+
+    - O sistema recusará o acesso.
+
+    - Uma mensagem de erro informará: “Usuário ou senha estão incorretos”.
+
+    - A tentativa será contabilizada para possível futuro bloqueio.
+</code></pre>
+<h3 id="3-bloqueio-por-tentativas-consecutivas">3. Bloqueio por tentativas consecutivas</h3>
+<pre><code>Caso o usuário informe a senha incorreta cinco vezes consecutivas o sistema irá bloquear o acesso da conta por dez minutos.
+
+    - Durante o período de bloqueio:
+
+    - O usuário não poderá fazer novas tentativas de acesso.
+
+    - Uma mensagem irá informar que o acesso está temporariamente bloqueado.
+
+    - Após o término de dez minutos, novas tentativas serão disponibilizadas.
+</code></pre>
+<h3 id="4-encerrar-sessao">4. Encerrar sessão</h3>
+<pre><code>Ao finalizar suas atividades, o usuário poderá selecionar a opção "Encerrar sessão".
+
+Ao selecionar essa opção:
+
+    - A sessão atual será encerrada.
+
+    - O usuário deixará de ter acesso às funcionalidades do sistema.
+
+    - O sistema irá direcionar o usuário para a tela de login.
+</code></pre>
+<h2 id="regras-de-negocio">Regras de Negócio</h2>
+<p>RN001 - O campo de usuário será obrigatório.</p>
+<p>RN002 - O campo de senha será obrigatório.</p>
+<p>RN003 - A senha deve possuir no mínimo 8 caracteres e ao menos um caractere especial.</p>
+<p>RN004 - Após cinco falhas de senha consecutivas, a conta será bloqueada por dez minutos.</p>
 
 
 
