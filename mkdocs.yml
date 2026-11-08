@@ -1,0 +1,9 @@
+site_name: Documentação Sapore Della Mamma 
+site_url: https://DanielWerle.github.io
+theme: 
+  name: material
+
+nav: 
+  - Home: index.md
+  - Arquitetura: arquitetura.md
+  - Fluxo de Login: fluxoDeLogin.md

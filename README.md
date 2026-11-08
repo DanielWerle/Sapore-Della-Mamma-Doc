@@ -1,2 +1,2 @@
 # Sapore-Della-Mamma-Doc
-Documentação da Sapore Della Mama criada com MkDocs
+Documentação de Sapore Della Mama criada com MkDocs
