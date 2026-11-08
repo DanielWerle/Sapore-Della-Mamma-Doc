@@ -4,6 +4,7 @@ A funcionalidade de login permite autenticar o usuário por meio da validação 
 1. Acesso à tela de Login
 Quando o usuário acessar o site ele será recepcionado pela tela de login do sistema, onde apresentará:
 
+
 - O campo “usuário” 
 
 - O campo “senha”
