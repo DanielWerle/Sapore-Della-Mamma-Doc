@@ -329,6 +329,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="2. Validação das Credenciais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credenciais-validas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credenciais Válidas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#credenciais-invalidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credenciais Inválidas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -418,6 +446,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="2. Validação das Credenciais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credenciais-validas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credenciais Válidas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#credenciais-invalidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credenciais Inválidas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -473,56 +529,48 @@
 <h1 id="fluxo-de-login-do-sistema">Fluxo de Login do Sistema</h1>
 <p>A funcionalidade de login permite autenticar o usuário por meio da validação de suas credenciais e controlar o acesso às funcionalidades do sistema.</p>
 <h3 id="1-acesso-a-tela-de-login">1. Acesso à tela de Login</h3>
-<pre><code>Quando o usuário acessar o site ele será recepcionado pela tela de login do sistema, onde apresentará:
+<p>Quando o usuário acessar o site ele será recepcionado pela tela de login do sistema, onde apresentará:</p>
+<pre><code>- O campo “usuário”
 
-    - O campo “usuário”
+- O campo “senha”
 
-    - O campo “senha”
-
-    - O botão “Entrar“
-
-O usuário deve informar suas credenciais e selecionar "Entrar" ou pressionar Enter para iniciar a autenticação.
+- O botão “Entrar“
 </code></pre>
+<p>O usuário deve informar suas credenciais e selecionar "Entrar" ou pressionar Enter para iniciar a autenticação.</p>
 <h3 id="2-validacao-das-credenciais">2. Validação das Credenciais</h3>
-<pre><code>Após o envio das credenciais, o sistema realiza a autenticação e segue um dos caminhos:
+<p>Após o envio das credenciais, o sistema realiza a autenticação e segue um dos caminhos:</p>
+<h4 id="credenciais-validas">Credenciais Válidas</h4>
+<pre><code>- O sistema permitirá o acesso.
 
-Credenciais Válidas
+- Uma sessão será registrada.
 
-    - O sistema permitirá o acesso.
+- O usuário poderá utilizar as funcionalidades disponíveis de acordo com suas permissões.
+</code></pre>
+<h4 id="credenciais-invalidas">Credenciais Inválidas</h4>
+<pre><code>- O sistema recusará o acesso.
 
-    - Uma sessão será registrada.
+- Uma mensagem de erro informará: “Usuário ou senha estão incorretos”.
 
-    - O usuário poderá utilizar as funcionalidades disponíveis de acordo com suas permissões.
-
-Credenciais Inválidas
-
-    - O sistema recusará o acesso.
-
-    - Uma mensagem de erro informará: “Usuário ou senha estão incorretos”.
-
-    - A tentativa será contabilizada para possível futuro bloqueio.
+- A tentativa será contabilizada para possível futuro bloqueio.
 </code></pre>
 <h3 id="3-bloqueio-por-tentativas-consecutivas">3. Bloqueio por tentativas consecutivas</h3>
-<pre><code>Caso o usuário informe a senha incorreta cinco vezes consecutivas o sistema irá bloquear o acesso da conta por dez minutos.
+<p>Caso o usuário informe a senha incorreta cinco vezes consecutivas o sistema irá bloquear o acesso da conta por dez minutos.</p>
+<pre><code>- Durante o período de bloqueio:
 
-    - Durante o período de bloqueio:
+- O usuário não poderá fazer novas tentativas de acesso.
 
-    - O usuário não poderá fazer novas tentativas de acesso.
+- Uma mensagem irá informar que o acesso está temporariamente bloqueado.
 
-    - Uma mensagem irá informar que o acesso está temporariamente bloqueado.
-
-    - Após o término de dez minutos, novas tentativas serão disponibilizadas.
+- Após o término de dez minutos, novas tentativas serão disponibilizadas.
 </code></pre>
 <h3 id="4-encerrar-sessao">4. Encerrar sessão</h3>
-<pre><code>Ao finalizar suas atividades, o usuário poderá selecionar a opção "Encerrar sessão".
+<p>Ao finalizar suas atividades, o usuário poderá selecionar a opção "Encerrar sessão".</p>
+<p>Ao selecionar essa opção:</p>
+<pre><code>- A sessão atual será encerrada.
 
-Ao selecionar essa opção:
+- O usuário deixará de ter acesso às funcionalidades do sistema.
 
-    - A sessão atual será encerrada.
-
-    - O usuário deixará de ter acesso às funcionalidades do sistema.
-
-    - O sistema irá direcionar o usuário para a tela de login.
+- O sistema irá direcionar o usuário para a tela de login.
 </code></pre>
 <h2 id="regras-de-negocio">Regras de Negócio</h2>
 <p>RN001 - O campo de usuário será obrigatório.</p>
